@@ -1,12 +1,19 @@
 const mysql = require("mysql2/promise");
 
 const pool = mysql.createPool(
-	{
-		database: "store",
-		user: "root",
-		password: "root",
-		host: "localhost",
-		port: 8889,
+	// {
+	// 	database: "store",
+	// 	user: "root",
+	// 	password: "root",
+	// 	host: "localhost",
+	// 	port: 8889,
+	// }
+  {
+	database: process.env.MYSQLDATABASE,
+	user: process.env.MYSQLUSER,
+	password: process.env.MYSQLPASSWORD,
+	host: process.env.MYSQLHOST,
+	port: process.env.MYSQLPORT,
 	}
 
 	// async function asyncMySQL(query, params) {
