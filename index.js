@@ -41,3 +41,4 @@ app.use("/api/orders", require("./routes/orders"));
 // app.listen(PORT, () => {
 // 	console.log(`server started on port ${PORT}`);
 // });
+export default app;
