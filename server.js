@@ -38,6 +38,6 @@ app.use("/api/users", require("./routes/user"));
 app.use("/api/products", require("./routes/products"));
 app.use("/api/orders", require("./routes/orders"));
 
-app.listen(PORT, () => {
-	console.log(`server started on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+// 	console.log(`server started on port ${PORT}`);
+// });
